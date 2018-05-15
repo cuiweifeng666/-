@@ -1,0 +1,22 @@
+{
+  "pages":[
+    "pages/main/main",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/num01/num01",
+    "pages/num02/num01",
+    "pages/num03/num01",
+    "pages/num04/num01",
+    "pages/num05/num01",
+    "pages/num06/num01",
+    "pages/radar/index",
+    "pages/que/que"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor": "#eee",
+    "navigationBarBackgroundColor": "#F9D701",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"black"
+  }
+}

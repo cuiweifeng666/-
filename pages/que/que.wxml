@@ -1,0 +1,4 @@
+<!--pages/que/que.wxml-->
+<text>pages/que/que.wxml</text>
+<image src="../../resource/images/book01.png" bindtap='saveImgToPhotosAlbumTap'></image>
+<canvas id="mh" canvas-id='mh'></canvas>

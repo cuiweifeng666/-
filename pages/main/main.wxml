@@ -1,0 +1,50 @@
+<!--index.wxml-->
+ <!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>  -->
+
+<!-- <image class='source' src=""></image> -->
+<view style="opacity:{{laya}}">
+<view class='container'  animation="{{animationTop}}"  bindtap='se'>
+<view wx:if="{{showL}}">
+  <view class='line1'>
+  </view>
+    <view class='line2'>
+  </view>
+</view>
+  <view class='c1'>
+    <image  src="../../resource/images/sour_top.png"  class="c_t1" ></image>
+    <image src="../../resource/images/sour_all.png"  id="c01" style=""></image>  
+  </view>
+   <image src="../../resource/images/red_bg.png"  id="c3"></image>   
+<view class='wave_box'>
+  <image src="../../resource/images/wave.png"  id="c2" animation="{{animationData}}" mode="aspectFill" style="left:{{mleft}}rpx;top:{{mtop}}rpx;"></image>
+</view>
+<image  src="../../resource/images/load_title.png" style="left:{{titleLeft}}rpx"  class="load_title" ></image>
+ <!-- <progress percent="{{percent}}" style="opacity:0;" show-info active='{{isDown}}' />  -->
+ <view class='loading' style="display:{{display}}"> 
+    <view class='show_num'>{{height}}%</view>
+    <text class='loading_text' >努力为你加载中…</text>
+ </view>
+<image class='person' src="../../resource/images/man.png" animation="{{animationman}}"></image>
+<image class='person01' src="../../resource/images/man01.png"  animation="{{animationman01}}"></image>
+<image class='woman' src="../../resource/images/woman.png"  animation="{{animationwoman}}"></image>
+<image class='woman01' src="../../resource/images/woman01.png" animation="{{animationwoman01}}"></image>
+
+<image class='book01' src="../../resource/images/book01.png" animation="{{animation01}}"></image>
+<image class='book02' src="../../resource/images/book2.png" animation="{{animation02}}"></image>
+<image class='book03' src="../../resource/images/book3.png" animation="{{animation03}}"></image>
+
+</view>
+<image class='m_btn' src="../../resource/images/m_btn.png" animation="{{animationbtn}}" bindtap="beforeleave" style='top:{{btnDown}}rpx'></image>
+</view>
+

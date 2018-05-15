@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container" wx:if="{{showCanvas}}">
+  <ec-canvas id="mychart-dom-graph"  canvas-id="mychart-graph" ec="{{ ec }}"></ec-canvas>
+</view>
+<view class='container01'   animation="{{animationCon}}">
+    <image class='top' src="../../resource/images/make.png" animation="{{animationScale}}"></image>
+    <image class='end_pic' bindtap="scan" src="../../resource/images/end.png"></image>
+    <view class='content'>
+        <text class='right_t'>没有翅膀的蝙蝠侠</text>
+        <!-- <text class='center_t'>血性男儿</text>
+        <text class='bottom_t'>套马滴汉子你威武雄壮</text> -->
+        <image src="{{headPic}}" class='head'></image>
+    </view>
+</view>
+<view class='bottom' animation="{{animationDown}}">
+  <image src="../../resource/images/more.png" class='more' bindtap="more"></image>
+  <image src="../../resource/images/down.png" class='down' bindtap="down"></image>
+</view>  
+<image src="{{canvas}}" class='showCanvas' wx:if="{{!showCanvas}}"></image>
+<!-- <canvas id="canvas"></canvas> -->

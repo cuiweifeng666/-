@@ -1,0 +1,5 @@
+/* pages/que/que.wxss */
+#mh{
+  width: 100%;
+  height:100;
+}

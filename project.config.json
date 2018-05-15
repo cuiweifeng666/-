@@ -1,0 +1,72 @@
+{
+	"description": "",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.91",
+	"appid": "wxe9024207b426df10",
+	"projectname": "sdfs",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "are",
+					"pathName": "pages/radar/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "first",
+					"pathName": "pages/main/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "ask",
+					"pathName": "pages/num01/num01",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "num06",
+					"pathName": "pages/num06/num01",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "que",
+					"pathName": "pages/que/que",
+					"query": ""
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,43 @@
+<!--index.wxml-->
+ <!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>  -->
+<!-- <view class='container'>
+        
+</view>
+<view class='line1'>
+</view>
+  <view class='line2'>
+</view>
+    <image src="../../resource/images/sour_all.png"  id="c1" style="opacity:.3"></image>  
+   <image src="../../resource/images/red_bg.png"  id="c3"></image>   
+<view class='wave_box'>
+  <image src="../../resource/images/wave.png"  id="c2" animation="{{animationData}}" style="left:{{mleft}}rpx;top:{{mtop}}rpx;"></image>
+</view> -->
+<view class='container' animation="{{animationCon}}" style='top:{{cTop}}rpx'>
+    <image class='m_bg' src='../../resource/images/m_bg.png'></image>
+    <view class='name_group'>
+      <input class='input_name' bindfocus="codeText" bindinput="changeValue"	 type="text" value="{{value}}"></input>
+      <image src="../../resource/images/input_n.png" class='name_img'></image>
+    </view>
+     <view class='head_group'>
+        <image class='man_head' src="../../resource/images/man_head.png" bindtap="manBtn"></image>
+         <image class='woman_head' src="../../resource/images/woman_head.png" bindtap="womanBtn"></image>
+        <image class='sure' src="../../resource/images/sure.png" style="display:{{sureShow}};left:{{sureLeft}}rpx"  animation="{{changScall}}"></image>
+         <view class='text'>
+            <text class='text01'>我是GG</text>
+            <text class='text02'>我是MM</text>
+         </view>
+    </view>
+</view>
+
+<image src='../../resource/images/ready.png' class='ready' animation="{{load?animationbtn:animationbtn01}}" bindtap="btnClick" style="top:{{mTop}}rpx"></image>

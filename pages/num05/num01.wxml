@@ -1,0 +1,68 @@
+<!--pages/num01/num01.wxml-->
+<view class='container' animation="{{animationCon}}">
+      <image class='move_bg' src="../../resource/images/move_bg1.png"></image>
+
+      <view class='top_title' animation="{{animationTit}}">
+          <view class='line'></view>
+          <image src='../../resource/images/top05.png' class='top01'></image>
+      </view>
+      <view class='text_group'>
+          <text>{{que_t}}</text>
+
+          <video src="http://111.202.98.145/variety.tc.qq.com/Ak032wVrZ4ilIj5wlwIdK2bgozyj6ktDlx2JGs6iPgzQ/q0200sjkj7z.p201.1.mp4?vkey=3AEEC6F8AF3B22150A144D7932ABF8B1CE57F8961D09BD4D934060CC982408F5A8C0E6ADB75B5E42F4A6E0ECA423F5060A225E6C6BB2BE73CB4B60B98499439B2E060B7F087AB31DA945CFB147B486DBA104B2D36284A500111D97205C69B7232BBD54528D04A981298784B0270C17ED773BE4D07A99E6B6&platform=10201&sdtfrom=&fmt=shd&level=0" class='ved'  controls='{{false}}' autoplay="{{false}}" event-model="bubble"  bindended="end"	 id="myVideo" style='display:{{showT}}'>
+   <!-- <cover-view class='mask_bg' wx:if="{{showP}}" >
+  </cover-view>  -->
+
+   <cover-view class='mask' wx:if="{{shows}}" >
+      <cover-image src="../../resource/images/red_bg.png"></cover-image>
+  </cover-view>  
+   <cover-view class='play'  wx:if="{{playing}}" bindtap='play'>
+      <cover-image src="../../resource/images/play.png"></cover-image>
+  </cover-view>  
+  <cover-view class='pause'  wx:if="{{pause}}"  bindtap='pause' style='opacity:{{opacity}};background:{{background}}'>
+       <!-- <cover-image src="../../resource/images/red_bg.png"></cover-image> -->
+      <cover-image   wx:if="{{showP}}" src="../../resource/images/pause.png" class='p_IMG'></cover-image>
+  </cover-view>  
+  
+   <!-- <cover-view class="controls">
+    <cover-view class="play" bindtap="play">
+      <cover-image class="img" src="../../resource/images/play.png" />
+    </cover-view>
+    <cover-view class="pause" bindtap="pause">
+      <cover-image class="img" src="../../resource/images/pause.png" />
+    </cover-view>
+    <cover-view class="time">00:00</cover-view>
+  </cover-view> -->
+    
+  </video>
+  
+      </view>
+</view>
+ <view class='center clearfix' style="display:{{show}}">
+    <!-- <image class='top_01' src=""></image> -->
+    <view class='percent' style="top:{{top}}rpx;display:{{topShow}}">
+        <image src='../../resource/images/con_red.png'></image>
+        <text>{{percent}}%人选择</text>
+    </view>
+    <view class='center_01 con fl ' bindtap="ask" data-t="1" animation="{{animationText01}}">
+        <image class='pic_01 fl' src="{{select ==1?src02:src01}}"></image>
+        <image class='a_pic fl' style="opacity:{{select ==1?'0':'1'}}" src="../../resource/images/a_pic.png" ></image>
+        <view><text>{{que_d[0].title}}</text> </view>
+    </view>
+    <view class='center_02 con fl'  bindtap="ask" data-t="2"  animation="{{animationText03}}">
+        <image class='pic_01' src="{{select ==2?src02:src01}}"></image>
+        <image class='a_pic fl' src="../../resource/images/b_pic.png" style="opacity:{{select ==2?'0':'1'}}" ></image>
+        <view>{{que_d[1].title}}</view>
+    </view>
+    <view class='center_03 con fl'  bindtap="ask" data-t="3"  animation="{{animationText}}">
+        <image class='pic_01'  src="{{select ==3?src02:src01}}"></image>
+        <image class='a_pic fl' style="opacity:{{select ==3?'0':'1'}}"   src="../../resource/images/c_pic.png" ></image>
+        <view>{{que_d[2].title}}</view>
+    </view>
+    <view class='center_04 con fl'  bindtap="ask" data-t="4" animation="{{animationText02}}">
+        <image class='pic_01' src="{{select ==4?src02:src01}}" ></image>
+        <image class='a_pic fl' style="opacity:{{select ==4?'0':'1'}}"   src="../../resource/images/d_pic.png"></image>
+        <view>{{que_d[3].title}}</view>
+    </view>
+</view> 
+<image class='next_q' src="../../resource/images/next_que.png"  animation="{{animationNext}}" bindtap="nextQue"></image>
